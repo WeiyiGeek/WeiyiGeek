@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌐 WeiyiGeek | 欢迎关注WeiyiGeek公众号  </title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #e8eef2;
+      font-family: trebuchet ms, Verdana, verdana ref, segoe ui, sans-serif;
+    }
+  </style>
+</head>
+<body>
+  
+<div id="btw-mask" style="position: fixed; top: 0px; right: 0px; bottom: 0px; left: 0px; opacity: 0.7; z-index: 999; background: rgb(0, 0, 0);"></div>
+<div id="btw-modal" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 320px; text-align: center; font-size: 13px; background: rgb(255, 255, 255); border-radius: 10px; z-index: 9999; font-family: PingFangSC-Regular, sans-serif;">
+<!-- <span id="btw-modal-close-btn" style="position: absolute; top: 5px; right: 15px; line-height: 34px; font-size: 34px; cursor: pointer; opacity: 0.2; z-index: 9999; color: rgb(0, 0, 0); background: none; border: none; outline: none;">×</span> -->
+<p id="btw-modal-header" style="margin-top: 40px; line-height: 1.8; font-size: 13px; ">
+  请扫一扫下方二维码，关注博主<strong>微信公众号</strong><br>
+  关注后请回复：<strong style="color: rgb(240, 65, 52);"><span id="key">您好</span></strong>
+  <br/>
+  获取<strong style="color: rgb(240, 65, 52);">下载链接</strong>以及微信公众号中的文章</p>
+<img src="https://blog.weiyigeek.top/img/wechat-soso.png" style="width: 300px; margin-top: 10px;">
+<div id="btw-modal-input-code" style="margin-top: 20px; background: rgb(255, 255, 255);">
+  <button id="btw-back-btn" onclick="window.history.go(-1);" style="padding: 0px 20px; height: 32px; font-size: 14px; outline: none; border: none; color: rgb(255, 255, 255); background: rgb(222, 104, 109); cursor: pointer;">返回来源页</button>
+  <button id="btw-submit-btn" onclick="window.location.href='https://space.bilibili.com/385802642/article'" style="padding: 0px 20px; height: 32px; font-size: 14px; outline: none; border: none; color: rgb(255, 255, 255); background: #08c160; cursor: pointer;">文章专栏页</button> 
+</div>
+<p id="btw-footer" style="margin: 40px 0px 20px; color: rgb(153, 153, 153);">为了能到远方，脚下的每一步都不能少</p>
+</div>
+
+
+  <script>
+    // 获取请求的变量
+    function getQueryVariable(variable)
+    {
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+      for (var i=0;i<vars.length;i++) {
+        var pair = vars[i].split("=");
+        if(pair[0] == variable){return pair[1];}
+      }
+      return(false);
+    }
+
+    // 过滤特殊字符
+    function filterStr(str)  
+    {  
+      var pattern = new RegExp("[`~!@#$^*()=|{}':;',\\[\\].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？%+_]");  
+      var specialStr = "";  
+      for(var i=0;i<str.length;i++)  
+      {  
+        specialStr += str.substr(i, 1).replace(pattern, '');   
+      }  
+      return specialStr;  
+    } 
+
+    // 获取指定key并进行输出
+    var key = getQueryVariable("key")
+    if (key) {
+      document.getElementById("key").innerText=filterStr(key);
+    }
+  </script>
+</body>
+</html>
