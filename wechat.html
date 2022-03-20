@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./favicon.ico">
-  <title>🌐 WeiyiGeek | 欢迎关注WeiyiGeek公众号  </title>
+  <title>🌐 WeiyiGeek | 欢迎关注 WeiyiGeek 公众号  </title>
   <style>
     body {
       margin: 0;
@@ -24,8 +24,8 @@
   请扫一扫下方二维码，关注博主<strong>微信公众号</strong><br>
   关注后请回复：<strong style="color: rgb(240, 65, 52);"><span id="key">您好</span></strong>
   <br/>
-  获取<strong style="color: rgb(240, 65, 52);">下载链接</strong>以及微信公众号中的文章</p>
-<img src="https://cdn.jsdelivr.net/gh/WeiyiGeek/WeiyiGeek/res/wechat-soso.png" style="width: 300px; margin-top: 10px;">
+  获取<strong style="color: rgb(240, 65, 52);">下载链接</strong>以及微信公众号中的文章!</p>
+<img src="https://gitee.com/WeiyiGeek/weiyigeek/raw/master/img/wechat-search.png" style="width: 300px; margin-top: 10px;">
 <div id="btw-modal-input-code" style="margin-top: 20px; background: rgb(255, 255, 255);">
   <button id="btw-back-btn" onclick="window.history.go(-1);" style="padding: 0px 20px; height: 32px; font-size: 14px; outline: none; border: none; color: rgb(255, 255, 255); background: rgb(222, 104, 109); cursor: pointer;">返回来源页</button>
   <button id="btw-submit-btn" onclick="window.location.href='https://space.bilibili.com/385802642/article'" style="padding: 0px 20px; height: 32px; font-size: 14px; outline: none; border: none; color: rgb(255, 255, 255); background: #08c160; cursor: pointer;">文章专栏页</button> 
@@ -60,9 +60,9 @@
     } 
 
     // 获取指定key并进行输出
-    var key = getQueryVariable("key")
+    var key = getQueryVariable("key");
     if (key) {
-      document.getElementById("key").innerText=filterStr(key);
+      document.getElementById("key").innerText=filterStr(decodeURI(key));
     }
   </script>
 </body>
