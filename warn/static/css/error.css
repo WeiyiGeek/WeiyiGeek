@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+/*css 初始化 */
+
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+
+/*去掉input等聚焦时的蓝色边框*/
+
+ul,
+ol {
+    list-style: none;
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, \5FAE\8F6F\96C5\9ED1, Tahoma, Arial, sans-serif;
+}
+
+select,
+input {
+    vertical-align: middle;
+}
+
+select,
+input,
+textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+
+/*防止拖动*/
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+
+/*  去掉图片低测默认的3像素空白缝隙，或者用display：block也可以*/
+
+table {
+    border-collapse: collapse;
+}
+
+body {
+	font: 14px Helvetica Neue, Helvetica, PingFang SC, \5FAE\8F6F\96C5\9ED1, Tahoma, Arial, sans-serif;
+	color: #212121;
+    background-color: #FFF;
+}
+
+body.error-403,
+body.error-404 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body.error-403 .error-box {
+    width: 397px;
+    margin: 180px auto 0;
+    background: url(../images/403.gif) top center no-repeat;
+    padding-top: 265px;
+    text-align: center;
+}
+
+.error-box h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2C3F52;
+    margin-bottom: 16px;
+}
+
+.error-box ul {
+    width: 230px;
+    text-align: left;
+    margin: 16px auto;
+}
+
+.error-box ul li {
+    list-style-type: disc;
+    margin-left: 1em;
+}
+
+.error-box p {
+    margin: 16px auto;
+}
+
+.error-box a {
+    text-decoration: none;
+    color: #00AAEB;
+}
+
+.error-box a:hover {
+    color: #2C3F52;
+}
+
+body.error-404 .error-box {
+    width: 590px;
+    margin: 180px auto 0;
+    background: url(../images/404.gif) top center no-repeat;
+    padding-top: 295px;
+    text-align: center;
+}
+
+body.error-404 .error-box h1 {
+    font-size: 24px;
+    margin-top: 16px;
+}
+
+body.error-500 .error-box {
+    width: 510px;
+    margin: 0 auto 0;
+    background: url(../images/500.gif) top center no-repeat;
+    padding-top: 340px;
+    text-align: center;
+}
+
+body.error-500 .error-box h1 {
+    font-size: 94px;
+    color: #2C3F52;
+}
+
+body.error-500 .error-box h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2C3F52;
+    margin-top: -30px;
+}
+
+body.error-504 .error-box {
+    width: 848px;
+    margin: 50px auto 0;
+    background: url(../images/504.gif) top center no-repeat;
+    padding-top: 315px;
+    text-align: center;
+}
+
+body.error-504 .error-box h1 {
+    font-size: 94px;
+    line-height: 88px;
+    color: #008C8C;
+}
+
+body.error-504 .error-box h2 {
+    font-size: 46px;
+    font-weight: bold;
+    color: #2C3F52;
+    line-height: 40px;
+}
+
+.error-box .links {
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.error-box .links a {
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 25px;
+    background-color: #1E9FFF;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    box-sizing: border-box;
+    letter-spacing: 0;
+    margin: 0 10px;
+}
+
+.error-box .links a:hover {
+    opacity: .8;
+    filter: alpha(opacity=80);
+    color: #fff;
+}

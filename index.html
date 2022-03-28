@@ -142,6 +142,13 @@
       background-position: 50%;
       transition: opacity .5s
     }
+
+    #footer {
+      display: block;
+      text-align: center;
+      color: white;
+      font-size: medium;
+    }
   </style>
 </head>
 
@@ -206,14 +213,26 @@
       </nav>
       <div style="text-align:center" width="180" height="180">
         <span style="text-align: center;font-weight: bold;font-size: 18px;color: e8eef2;"> <a href="./wechat.html?key=欢迎关注" alt="关注微信公众号【WeiyiGeek】" target="_blank">欢迎关注微信公众号</a> </span><br>
-        <img src="https://gitee.com/WeiyiGeek/weiyigeek/raw/master/img/wechat-gzh.jpg" style="text-align: center;" alt="微信公众号【WeiyiGeek】" width="150" height="150">
+        <img src="https://gitee.com/WeiyiGeek/weiyigeek/raw/master/img/wechat-search.png" style="text-align: center;border: white 2px solid;" alt="微信公众号【WeiyiGeek】" width="400" height="182">
       </div>
+    </div>
+
+    <div id="footer"> 
+      WeiyiGeek &copy; <span id="years"></span> <a href="/">weiyigeek.top</a> All rights reserved. IT唯一极客 版权所有 <span> <br/> <a href="https://beian.miit.gov.cn/">ICP备案号：渝ICP备2022003447号</a></span>
     </div>
   </div>
   <script>
     // 自执行函数 
     // chanshiyu.com 帮忙改好的(～o￣3￣)～
     (function () {
+      var startYear = 2018;
+      var currentYear = new Date().getFullYear();
+      if (startYear > currentYear) {
+        document.getElementById("years").innerHTML=startYear;
+      }else{
+        document.getElementById("years").innerHTML=startYear+" - "+currentYear;
+      }
+
       var os = (function () {
         var ua = navigator.userAgent,
           isWindowsPhone = /(?:Windows Phone)/.test(ua),
@@ -291,9 +310,7 @@
     }
     typing(str);
   </script>
-
 </body>
-
 </html>
 
 
