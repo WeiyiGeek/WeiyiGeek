@@ -1,0 +1,144 @@
+html {
+  background: #494f5c;
+  line-height: 1.6;
+  letter-spacing: .06em;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 2.0em
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  color: #e8eef2;
+  font-family: trebuchet ms, Verdana, verdana ref, segoe ui, sans-serif
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #e8eef2;
+  text-decoration: none;
+  border: none;
+  transition-property: color;
+  transition-duration: .4s;
+  transition-timing-function: ease-out
+}
+
+hr {
+  opacity: .2;
+  border-width: 0 0 5px;
+  border-style: dashed;
+  background: 0 0;
+  width: 50%;
+  margin: 1.8em auto
+}
+
+.section-inner {
+  margin: 0 auto;
+  max-width: 75pc;
+  width: 93%
+}
+
+.thin {
+  max-width: 45pc;
+  margin: auto
+}
+
+.feather {
+  display: inline-block;
+  vertical-align: -.125em;
+  width: 1em;
+  height: 1em
+}
+
+#menu-btn {
+  display: none;
+  margin-left: .6em;
+  cursor: pointer
+}
+
+#spotlight {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 93%;
+  margin: auto;
+  font-size: 1.5rem
+}
+
+#home-center {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center
+}
+
+#home-title {
+  margin: 0;
+}
+
+#home-tips {
+  font-size: .7em;
+  justify-content: center;
+  font-family: 华文细黑, 微软雅黑, Droid Sans,segoe ui, sans-serif
+}
+
+#home-social {
+  font-size: 1.6em;
+  text-align: center;
+  opacity: .8
+}
+
+#home-social a {
+  margin: 0 .2em
+}
+
+#home-nav {
+  opacity: .8
+}
+
+#home-nav a {
+  display: block;
+  text-align: center;
+  margin-top: .5em;
+  font-size: 1.0em
+}
+
+#home-wechat {
+  font-family: 华文细黑, 微软雅黑, Droid Sans,segoe ui, sans-serif
+}
+
+#footer {
+  display: block;
+  text-align: center;
+  color: white;
+  font-size: medium;
+  font-family: 华文细黑, 微软雅黑, Droid Sans,segoe ui, sans-serif
+}
+
+.bg-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  z-index: -1;
+  position: fixed;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  transition: opacity .5s
+}
