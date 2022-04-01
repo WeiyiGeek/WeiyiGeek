@@ -1,0 +1,13 @@
+# robots.txt for WeiyiGeek Index
+# User-agent: dotbot
+# Disallow: /
+
+User-agent:*
+Allow: /
+Disallow: /css
+Disallow: /img
+Disallow: /js
+Disallow: /*.js
+Disallow: /*.css
+
+Sitemap: https://www.weiyigeek.top/sitemap.xml
