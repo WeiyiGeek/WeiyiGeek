@@ -2,34 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.weiyigeek.top/index.html</loc>
+    <mobile:mobile type="pc,mobile"/>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <lastmod>2022-03-31T02:59:28.594Z</lastmod>
   </url>
   <url>
     <loc>https://www.weiyigeek.top/wechat.html?key=欢迎关注</loc>
+    <mobile:mobile type="pc,mobile"/>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <lastmod>2022-03-31T02:36:28.185Z</lastmod>  
   </url>
   <url>
     <loc>https://blog.weiyigeek.top/index.html</loc>
+    <mobile:mobile type="pc,mobile"/>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <lastmod>2022-03-31T02:36:28.185Z</lastmod>  
   </url>
   <url>
     <loc>https://blog.weiyigeek.top/page/2/index.html</loc>
+    <mobile:mobile type="pc,mobile"/>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <lastmod>2022-03-31T02:36:28.185Z</lastmod>  
   </url>
   <url>
     <loc>https://blog.weiyigeek.top/page/3/index.html</loc>
+    <mobile:mobile type="pc,mobile"/>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <lastmod>2022-03-31T02:36:28.185Z</lastmod>  
   </url>
   <url>
     <loc>https://blog.weiyigeek.top/page/4/index.html</loc>
+    <mobile:mobile type="pc,mobile"/>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <lastmod>2022-03-31T02:36:28.185Z</lastmod>  
   </url>
   <url>
     <loc>https://blog.weiyigeek.top/page/5/index.html</loc>
+    <mobile:mobile type="pc,mobile"/>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <lastmod>2022-03-31T02:36:28.185Z</lastmod>  
   </url>
    <url>
     <loc>https://blog.weiyigeek.top/page/6/index.html</loc>
+    <mobile:mobile type="pc,mobile"/>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
     <lastmod>2022-03-31T02:36:28.185Z</lastmod>  
   </url>
 </urlset>
