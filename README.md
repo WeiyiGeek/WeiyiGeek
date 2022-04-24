@@ -8,4 +8,4 @@
 |---|---|---|---------------------------------------- |
 |🌐 [BiliBili](https://space.bilibili.com/385802642) | 🌐 [Zhihu](https://www.zhihu.com/people/weiyiSec) | 📣 [WeiyiGeek](WeiyiGeek) | 📘 [Books](https://blog.weiyigeek.top/books/) |
 
-![img](./img/bg.png)
+![img](./img/weiyigeek.jpg)
