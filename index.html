@@ -18,11 +18,15 @@
   <script src="./js/statistics.js"></script>
 </head>
 <body id="page">
-  <div class="bg-img" style="background-image: url('https://wx1.sinaimg.cn/large/008iJh1nly1h2fvo6y96uj31hc0u0ag7.jpg');"></div>
+  <!-- <div class="bg-img" style="background-image: url('https://wx1.sinaimg.cn/large/008iJh1nly1h2fvo6y96uj31hc0u0ag7.jpg');"></div> -->
+  <canvas id="bg-canvas"></canvas>
   <div id="spotlight">
     <div id="home-center">
       <h1 id="home-title">WeiyiGeek</h1>
-      <div id="home-tips" class="tips"> </div>
+      <div id="home-tips">
+        <span id="text"></span>
+        <span id="bar">|</span>
+      </div>
       <div id="home-social">
         <a href="https://twitter.com/WeiyiGeek" target="_blank" rel="noopener me" title="Twitter"><svg
             xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -94,92 +98,11 @@
       </div>
     </div>
   </div>
+  <script src="./js/index.js"></script>
   <script>
-    // 自执行函数 
-    (function () {
-      var startYear = 2018;
-      var currentYear = new Date().getFullYear();
-      if (startYear > currentYear) {
-        document.getElementById("years").innerHTML=startYear;
-      }else{
-        document.getElementById("years").innerHTML=startYear+" - "+currentYear;
-      }
-      // chanshiyu.com 帮忙改好的(～o￣3￣)～
-      var os = (function () {
-        var ua = navigator.userAgent,
-          isWindowsPhone = /(?:Windows Phone)/.test(ua),
-          isSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone,
-          isAndroid = /(?:Android)/.test(ua),
-          isFireFox = /(?:Firefox)/.test(ua),
-          isChrome = /(?:Chrome|CriOS)/.test(ua),
-          isTablet = /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox && /(?:Tablet)/.test(ua)),
-          isPhone = /(?:iPhone)/.test(ua) && !isTablet,
-          isPc = !isPhone && !isAndroid && !isSymbian;
-        return {
-          isTablet: isTablet,
-          isPhone: isPhone,
-          isAndroid: isAndroid,
-          isPc: isPc
-        };
-      })();
-      // pc图片数组
-      var pcImgList = [
-        "https://wx1.sinaimg.cn/large/008iJh1nly1h2fvo6y96uj31hc0u0ag7.jpg"
-      ]
-      // 手机图片数组
-      var mobileImgList = [
-        "https://wx1.sinaimg.cn/large/008iJh1nly1h2fvo6y96uj31hc0u0ag7.jpg"
-      ]
-      var bgObj = document.getElementsByClassName("bg-img");
-      // 判断 ua
-      if (os.isAndroid || os.isPhone) {
-        console.log("手机");
-        var rand = Math.round(Math.random() * mobileImgList.length);
-        var url = "url('" + mobileImgList[rand] + "')";
-        bgObj[0].style.backgroundImage = url;
-      } else if (os.isTablet) {
-        console.log("平板");
-      } else if (os.isPc) {
-        console.log("电脑");
-        var rand = Math.round(Math.random() * pcImgList.length);
-        var url = "url('" + pcImgList[rand] + "')";
-        bgObj[0].style.backgroundImage = url;
-      }
-    })();;
-
-    // 小小Buff
-    var text = document.getElementsByClassName("tips")[0];
-    var i = 0;
-    var strList = [
-      "开头很简单，最难的是坚持。",
-      "为了能到远方，脚下的每一步都不能少。",
-      "Always keep a beginner's mind, don't forget the beginner's mind.",
-      "花开堪折直须折，莫待无花空折枝。",
-      "一件事情不付诸实践，即使在心里想一万遍也是徒然。",
-      "一沙一世界，一花一天堂。君掌盛无边，刹那成永恒。",
-      "💡 有理想，但不妄想， 💭 有希望，但不奢望， 🐬 有作为，但不妄为。",
-      "我们登上的并非我们所选择的舞台，演出并非我们所选择的剧本。-- 爱比克泰德 (古罗马哲学家) 。",
-      "不闻不若闻之，闻之不若见之，见之不若知之，知之不若行之，学至于行之而止矣 -- 荀子",
-      "闻见知行。",
-      "拥有知识的错觉，比没有知识更可怕！",
-      "如果你只做能力范围之内的事，你就永远不会有进步！",
-      "没有落魄的行业，只有落魄的人！",
-      "业精于勤荒于嬉，行成于思毁于随! ",
-      "路漫漫其修远兮，吾将上下而求索。"
-    ]
-    var rand = Math.round(Math.random() * strList.length)
-    console.log(rand)
-    var str = strList[rand];
-    function typing() {
-      if (i <= str.length) {
-        text.innerHTML = str.substring(0, i++) + "|";
-        var timer = setTimeout(typing, 100);
-      } else {
-        text.innerHTML = str;
-        clearTimeout(timer);
-      }
-    }
-    typing(str);
+    console.log('Welcome to WeiyiGeek\'Index Site - [https://www.weiyigeek.top].\n花开堪折直须折，莫待无花空折枝!');
+    console.log('%c希望与各位志同道合的朋友一起学习交流，如文章有误请留下您宝贵的知识建议，或者通过邮箱【master#weiyigeek.top】联系我哟！', 'color:white');
+    console.log('%c专栏书写不易,如果您觉得这个专栏还不错的,请给这篇专栏 【点个赞、投个币、收个藏、关个注，转个发】(人间五大情),这将对我的肯定,谢谢支持！(๑′ᴗ‵๑) ❤！', 'color:red');
   </script>
 </body>
 </html>
