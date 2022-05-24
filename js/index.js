@@ -42,7 +42,8 @@ var strList = [
   "业精于勤荒于嬉，行成于思毁于随! ",
   "路漫漫其修远兮，吾将上下而求索。"
 ];
-var rand = Math.round(Math.random() * strList.length)
+var strLen = strList.length;
+var rand = Math.round(Math.random() * strLen)
 var str = strList[rand];
 function typing() {
   var text = document.getElementById("text");
@@ -70,13 +71,13 @@ function deleteText() {
   if (i < 0) {
     clearTimeout(deleteTextTimer);
     //删除完后，自动打字，达到循环, 防止重复。
-    randtemp = Math.round(Math.random() * strList.length)
-    while (randtemp == rand) {
-      randtemp = Math.round(Math.random() * strList.length)
+    randtemp = Math.round(Math.random() * strLen)
+    while (randtemp == rand || randtemp >= strLen ) {
+      randtemp = Math.round(Math.random() * strLen)
     }
     rand = randtemp;
     str = strList[rand];
-    console.log(str)
+    console.log(rand,str)
     typing();
   }
 }
