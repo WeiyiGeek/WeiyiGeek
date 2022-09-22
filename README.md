@@ -10,5 +10,13 @@
 
 
 
-![WeiyiGeek.top](./img/weiyigeek.jpg)
+---
+
+<span style="color:red">温馨提示</span>：微信小程序【极客全栈修炼】上线了，可以直接在微信中浏览唯一极客技术博客（ https://blog.weiyigeek.top ）中的相关文章，涉及网络安全、系统运维、应用开发、物联网实战、全栈文章，希望和大家一起学习进步，欢迎浏览交流！  
+
+<div align="center">
+  <img src="./img/wechat-app.png" alt="微信小程序【极客全栈修炼】" />
+</div>
+
+![欢迎访问 https://weiyigeek.top 个人主页站点](./img/weiyigeek.jpg)
 
